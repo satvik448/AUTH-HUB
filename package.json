@@ -1,0 +1,12 @@
+{
+  "name": "authhub-root",
+  "version": "1.0.0",
+  "description": "Root configuration to run both frontend and backend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix authhub-backend\" \"npm run dev --prefix authhub-frontend/my-app\"",
+    "install-all": "npm install --prefix authhub-backend && npm install --prefix authhub-frontend/my-app"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
